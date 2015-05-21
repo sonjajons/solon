@@ -1,3 +1,14 @@
+.solonBanner {
+  height: 200px;
+  width: 100%;
+  background-color: #3D3F3C;
+  border: solid 1px hotpink;
+}
+
+.navbar-header {
+  color: hotpink;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
