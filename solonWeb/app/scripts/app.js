@@ -14,9 +14,17 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'pascalprecht.translate'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $translateProvider) {
+    $translateProvider.useStaticFilesLoader({
+      prefix: 'lang_',
+      suffix: '.json'
+    });
+
+    $translateProvider.use('is');
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
