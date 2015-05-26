@@ -19,32 +19,34 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
     <!-- Add your site or application content here -->
+    <div class="row solonBanner">
+        <a href="#/">
+          <img 
+            src="images/SolonGray.jpg" 
+            id="solonLogo">
+        </a>
+        <!-- class="col-xs-offset-2 col-sm-offset-3 col-md-offset-4 col-lg-offset-5"  -->
+      </div>
     <div class="header">
       <div class="navbar navbar-default" role="navigation">
-      <div class="row solonBanner">
-        <img class="col-sm-offset-4 col-md-offset-4 col-lg-offset-5" 
-          src="images/SolonGray.jpg" 
-          id="solonLogo">
-      </div>
         <div class="container">
           <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+            <button type="button" class="navbar-toggle collapsed solonNav" data-toggle="collapse" data-target="#js-navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">solonWeb</a>
+            <!-- <a class="navbar-brand" href="#/">Sólon</a> -->
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
+              <li><a ng-href="#/">Home</a></li>
               <li><a ng-href="#/about">About</a></li>
               <li><a ng-href="#/">Contact</a></li>
             </ul>
