@@ -1,7 +1,6 @@
 * {
   /*font-family: Georgia, serif;*/
   font-family: "Courier New", Courier, monospace;
-  text-transform: uppercase;
 }
 
 .solonBanner {
@@ -41,6 +40,7 @@ body {
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
