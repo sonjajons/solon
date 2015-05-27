@@ -1,9 +1,10 @@
 {
-	"home": {
-		"Home": "Heim",
-		"Food": "Matur",
-		"Drinks": "Drykkir",
-		"About": "Um okkur",
-		"RentVenue": "Salur"
+	"index": {
+		"Lang":      "English",
+		"Home":      "Heim",
+		"Food":      "Matur",
+		"Drinks":    "Drykkir",
+		"About":     "Um okkur",
+		"RentVenue": "Veislusalur"
 	}
 }

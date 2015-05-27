@@ -30,12 +30,24 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/food', {
+      	templateUrl:'views/food.html',
+      	controller: 'MainCtrl'
+      })
+      .when('/drinks', {
+      	templateUrl:'views/drinks.html',
+      	controller: 'MainCtrl'
+      })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'MainCtrl'
       })
-      .when('/slider', {
-      	templateUrl:'views/slider.html',
+      .when('/venue', {
+      	templateUrl:'views/venue.html',
+      	controller: 'MainCtrl'
+      })
+      .when('/openingHours', {
+      	templateUrl: 'views/open.html',
       	controller: 'MainCtrl'
       })
       .otherwise({

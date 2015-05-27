@@ -1,9 +1,10 @@
 {
-	"home": {
-		"Home": "Home",
-		"Food": "Food",
-		"Drinks": "Drinks",
-		"About": "About",
+	"index": {
+		"Lang":      "Íslenska",
+		"Home":      "Home",
+		"Food":      "Food",
+		"Drinks":    "Drinks",
+		"About":     "About",
 		"RentVenue": "Rent Venue"
 	}
 }

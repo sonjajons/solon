@@ -2,12 +2,28 @@
   /*font-family: Georgia, serif;*/
   font-family: "Courier New", Courier, monospace;
 }
-.slider {
-  margin-top: 0;
+
+.container {
+	padding-left: 0;
+}
+
+#solonLang {
+  color: white;
+  margin-right: 20px; 
+  margin-top: 10px;
+}
+#solonLang:hover {
+  cursor: pointer;
+}
+
+.solonFood {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .solonBanner {
-  height: 160px;
+  height: 140px;
   background-color: #3D3F3C;
   margin-right: 0;
 }
@@ -18,11 +34,20 @@
   margin-right: auto;
 }
 
-.solonFooter {
-  margin: 0 auto 2% auto;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #2C2D2B;
+.solonOpen {
+  padding-top: 14px;
+  padding-left: 10px;
+  font-size: large;
+  color: white;
+  list-style: none;
+}
+
+.solonOpen:hover {
+  color: #D47D3A;
+}
+
+.slider {
+  border-radius: 5px;
 }
 
 .browsehappy {
@@ -61,10 +86,13 @@ body {
 
 /* Custom page footer */
 .footer {
+  margin: 0 auto 2% auto;
+  text-align: center;
+  text-transform: uppercase;
   padding-top: 19px;
   color: #929292;
   border-top: 1px solid #D47D3A;
-  background-color: #2C2D2B;
+  background-color: #3D3F3C;
 }
 
 .container-narrow > hr {
@@ -75,20 +103,8 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-  background-color: black;
+  background-color: #2C2D2B;;
   color: white;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -119,7 +135,7 @@ body {
 .navbar-default {
   letter-spacing: 1px;
   font-size: 12pt;
-  background-color: #2C2D2B;
+  background-color: #3D3F3C;
   border-color: #D47D3A;
   border-right: none;
   border-left: none;
