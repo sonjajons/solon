@@ -5,6 +5,10 @@
 		"Food":      "Matur",
 		"Drinks":    "Drykkir",
 		"About":     "Um okkur",
-		"RentVenue": "Veislusalur"
+		"RentVenue": "Veislusalur",
+		"Open":      "Opnunartími"
+	},
+	"open": {
+		"SunThu":    "Sun - Fim"
 	}
 }

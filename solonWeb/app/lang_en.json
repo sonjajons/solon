@@ -4,7 +4,11 @@
 		"Home":      "Home",
 		"Food":      "Food",
 		"Drinks":    "Drinks",
-		"About":     "About",
-		"RentVenue": "Rent Venue"
+		"About":     "About Us",
+		"RentVenue": "Rent Venue",
+		"Open":      "Opening hours"
+	},
+	"open": {
+		"SunThu":    "Sun - Thu"
 	}
 }

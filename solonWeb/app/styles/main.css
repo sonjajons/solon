@@ -3,15 +3,40 @@
   font-family: "Courier New", Courier, monospace;
 }
 
+#solonH1{
+  font-size: 32pt;
+}
+
+.solonCenter {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container {
-	padding-left: 0;
+  padding-left: 0;
 }
 
 #solonLang {
   color: white;
+  margin-left: 5px;
   margin-right: 20px; 
   margin-top: 10px;
 }
+
+#solonLang:hover {
+  color: #D47D3A;
+}
+
+#solonSocial {
+  margin-top: 10px;
+  color: lightgray;
+}
+
+#solonSocial:hover {
+  color: #D47D3A;
+}
+
 #solonLang:hover {
   cursor: pointer;
 }
@@ -49,6 +74,25 @@
 .slider {
   border-radius: 5px;
 }
+
+#solonText {
+  text-align: left;
+  font-size: 12pt;
+  font-weight: lighter;
+}
+
+.hours {
+	border-left: 2px solid gray;
+}
+
+.solonIcon {
+	padding-top: 10px;
+	font-size: large;
+	height: 40px;
+	text-align: right;
+}
+
+//////////////////////////////////////////////////////////////////////////
 
 .browsehappy {
   margin: 0.2em 0;

@@ -1,13 +1,12 @@
-<div class="jumbotron">
-  <h1>Matur</h1>
+<div class="jumbotron" ng-controller="MainCtrl">
+  <h1 id="solonH1" translate="index.Food">Matur</h1>
   <hr>
-  <div>
-    <img class="img-responsive solonFood" src="images/Food1EN.png" alt="Matsedill">
-    <img class="img-responsive solonFood" src="images/Food2EN.png" alt="Matsedill">
+  <div ng-show="isFood || isFood == undefined">
+    <img class="img-responsive solonFood" src="images/Food1IS.png" alt="Matsedill">
+    <img class="img-responsive solonFood" src="images/Food2IS.png" alt="Matsedill">
   </div>
-  <div>
+  <div ng-show="!isFood && isFood != undefined"> 
     <img class="img-responsive solonFood" src="images/Food1EN.png" alt="Matsedill">
-    <img class="img-responsive solonFood" src="images/Food2EN.png" alt="Matsedill">
+    <img class="img-responsive solonFood" src="images/Food2EN.png" alt="Matsedill"> 
   </div>
-  
 </div>
