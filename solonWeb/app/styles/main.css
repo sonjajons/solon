@@ -1,12 +1,48 @@
-@font-face {
+/*@font-face {
   font-family: solonFont;
   src: url(../fonts/Klavika-Regular.otf);
-}
+}*/
 
 * {
   font-family: solonFont, "Courier New", Courier, monospace;
 }
 
+dt {
+  text-align: left;
+}
+
+dd {
+  text-align: left;
+}
+
+.padd {
+  padding-left: 14px;
+}
+
+.mja {
+  margin-left: -20px;
+}
+
+.mainCont {
+  /*background: rgba(0, 0, 0, 0.6);*/
+  margin-top: -20px;
+  padding-top: 20px;
+}
+
+.solonprice {
+  float: right;
+}
+
+.descr {
+  font-size: 10pt;
+  display: inline-block;
+}
+
+.swapp {
+  background: rgba(0, 0, 0, 0.6);
+  margin-right: -35px;
+  margin-left: -35px;
+}
 
 #solonH1{
   font-size: 32pt;
@@ -27,7 +63,6 @@
   color: white;
   margin-left: 5px;
   margin-right: 20px; 
-  margin-top: 10px;
 }
 
 #solonLang:hover {
@@ -35,8 +70,7 @@
 }
 
 #solonSocial {
-  margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
   color: lightgray;
 }
 
@@ -56,7 +90,7 @@
 
 .solonBanner {
   height: 140px;
-  background-color: #3D3F3C;
+  /*background-color: #3D3F3C;*/
   margin-right: 0;
 }
 
@@ -110,7 +144,8 @@
 
 body {
   padding: 0;
-  background-color: #3D3F3C;
+  /*background-color: #3D3F3C;*/
+  background-image: url("graywall.jpg");
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -143,7 +178,9 @@ body {
   padding-top: 19px;
   color: #929292;
   border-top: 1px solid #D47D3A;
-  background-color: #3D3F3C;
+  /*background-color: #3D3F3C;*/
+  background: rgba(0, 0, 0, 0.6);
+
 }
 
 .container-narrow > hr {
@@ -181,12 +218,20 @@ body {
   }
 }
 
+/* Removein navbar brand */
+
+.navbar-brand {
+  display: none !important;
+}
+
 /* Navbar - http://work.smarchal.com/twbscolor/ */
 
 .navbar-default {
   letter-spacing: 1px;
   font-size: 12pt;
-  background-color: #3D3F3C;
+  /*background-color: #3D3F3C;*/
+  background: rgb(0, 0, 0) transparent;   /* Fallback for web browsers that doesn't support RGBa */
+  background: rgba(0, 0, 0, 0.6); 
   border-color: #D47D3A;
   border-right: none;
   border-left: none;
@@ -206,6 +251,7 @@ body {
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #eb8b41;
+  animation: colorfade 0.3s ;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu {
   background-color: #2C2D2B;
@@ -245,7 +291,7 @@ body {
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   /*border-color: #ffffff;*/
-  margin-left: 25%;
+  margin-left: 10%;
 }
 .navbar-default .navbar-link {
   color: #ffffff;
@@ -378,7 +424,8 @@ body {
 
 *:not(.on-focus) > .tool-tip.slideIn.bottom,
 .on-focus > .tool-tip.slideIn.bottom{
-	top: 50%;	
+	top: 50%;
+	padding-top: 6px;
 }
 
 *:not(.on-focus):hover > .tool-tip.slideIn.bottom,
