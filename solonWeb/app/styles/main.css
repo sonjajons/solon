@@ -7,12 +7,22 @@
   font-family: solonFont, "Courier New", Courier, monospace;
 }
 
+dl {
+  padding-right: 25px;
+  padding-left: 30px;
+}
+
 dt {
   text-align: left;
 }
 
 dd {
   text-align: left;
+  margin-top: 2px;
+}
+
+.solontypur {
+  color: #eb8b41;
 }
 
 .padd {
