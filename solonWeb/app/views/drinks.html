@@ -1,6 +1,644 @@
 <div class="jumbotron">
   <h1 id="solonH1" translate="index.Drinks">Drykkir</h1>
   <hr>
-  <img class="img-responsive solonFood" src="images/Drinks1.png" alt="Vinsedill">
-  <img class="img-responsive solonFood" src="images/Drinks2.png" alt="Vinsedill">
+  <!-- <img class="img-responsive solonFood" src="images/Drinks1.png" alt="Vinsedill">
+  <img class="img-responsive solonFood" src="images/Drinks2.png" alt="Vinsedill"> -->
+  <div ng-show="isFood || isFood == undefined">
+    <dl>
+    <h3 class="solontypur">Rauðvín</h3>
+     <dd>
+        Casillero del Diablo Cabernet Sauvignon
+        <span class="solonprice"> 1.390 kr / 5.700 kr</span>
+     </dd>
+     <dd>
+        Piccini Rosso Di Toscana - Italy
+        <span class="solonprice"> 1.390 kr / 5.900 kr</span>
+     </dd>
+     <dd>
+        Trapiche Oak Cask Malbec – Argentina
+        <span class="solonprice"> 6.900 kr</span>
+     </dd>
+     <dd>
+        Wolf Blass Eaglehawk Shiraz – Australia
+        <span class="solonprice"> 6.900 kr</span>
+     </dd>
+     <dd>
+        Rosemount Shiraz/Cabernet – Australia
+        <span class="solonprice"> 6.900 kr</span>
+     </dd>
+     <dd>
+        Leopard‘s Leap Cabernet – South Africa
+        <span class="solonprice"> 6.900 kr</span>
+     </dd>
+     <dd>
+        Matua Pinot Noir – New Zealand
+        <span class="solonprice"> 8.900 kr</span>
+     </dd>
+     <dd>
+        Lagunilla Reserva Rioja – Spain
+        <span class="solonprice"> 7.200 kr</span>
+     </dd>
+     <dd>
+        Campo Viejo Tempranillo – Spain
+        <span class="solonprice"> 6.900 kr</span>
+     </dd>
+     <dd>
+        Masi Valpolicella Classico – Italy
+        <span class="solonprice"> 6.900 kr</span>
+     </dd>
+     <dd>
+        Piccini Chianti Magnum
+        <span class="solonprice"> 14.900 kr</span>
+     </dd>
+     </br>
+     <h3 class="solontypur">Hvítvín</h3>
+     <dd>
+        Casillero del Diablo Chardonnay – Chile
+        <span class="solonprice"> 1.390 kr / 5.700 kr</span>
+     </dd>
+     <dd>
+        Piccini Bianco Di Toscana - Italy
+        <span class="solonprice"> 1.390 kr / 5.900 kr</span>
+     </dd>
+     <dd>
+        Montalto Pinot Grigio – Italy
+        <span class="solonprice"> 1.390 kr / 5.900 kr</span>
+     </dd>
+     <dd>
+        Trapiche Chardonnay - Argentina
+        <span class="solonprice"> 6.700 kr</span>
+     </dd>
+     <dd>
+        Wolf Blass Eaglehawk Chardonnay – Australia
+        <span class="solonprice"> 6.700 kr</span>
+     </dd>
+     <dd>
+        Jacob‘s Creek Riesling – Australia
+        <span class="solonprice"> 6.500 kr</span>
+     </dd>
+     <dd>
+        Arthur Metz Pinot Grigio – France
+        <span class="solonprice"> 6.700 kr</span>
+     </dd>
+     <dd>
+        Labourie Roi Chablis – France
+        <span class="solonprice"> 8.900 kr</span>
+     </dd>
+     <dd>
+        Matua Sauvignon Blanc – New Zealand
+        <span class="solonprice"> 7.900 kr</span>
+     </dd>
+     </br>
+     <h3 class="solontypur">Kampavín & Freyðivín</h3>
+     <dd>
+        Moet & Chandon Imperial
+        <span class="solonprice"> 6.900 kr / 29.900 kr</span>
+     </dd>
+     <dd>
+        Moet Rose
+        <span class="solonprice"> 28.900 kr</span>
+     </dd>
+     <dd>
+        Codorniu
+        <span class="solonprice"> 1.900 kr / 6.900 kr</span>
+     </dd>
+     <dd>
+        Gancia Prosecco
+        <span class="solonprice"> 6.900 kr</span>
+     </dd>
+     <dd>
+        Asti Gangia
+        <span class="solonprice"> 1.800 kr / 6.700 kr</span>
+     </dd>
+     <dd>
+        Piccini Prosecco Extra Dry
+        <span class="solonprice"> 1.900 kr / 6.900 kr</span>
+     </dd>
+     </br>
+     <h3 class="solontypur">Rósavín</h3>
+     <dd>
+        Mateus Rosé – Portugal
+        <span class="solonprice"> 1.390 kr / 5.200 kr</span>
+     </dd>
+     </br>
+     <h3 class="solontypur">Hanastél</h3>
+     <dd>
+        Mojito
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Jarðaberja Mojito
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Royal Mojito
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Cosmopolitan
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Martini Sólon
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Long Island Ice Tea
+        <span class="solonprice"> 3.700 kr</span>
+     </dd>
+     <dd>
+        Sex on the Beach
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Mimosa
+        <span class="solonprice"> 1.990 kr</span>
+     </dd>
+     <dd>
+        Aperol Spritz
+        <span class="solonprice"> 1.900 kr</span>
+     </dd>
+     <dd>
+        White Russian
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Black Russian
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Bloody Mary
+        <span class="solonprice"> 1.990 kr</span>
+     </dd>
+     <dd>
+        Margarita
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Frosin Jarðaberja Margarita
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Frosin Jarðaberja Daquiri
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Mai Thai
+        <span class="solonprice"> 2.900 kr</span>
+     </dd>
+     </br>
+     <h3 class="solontypur">Bjór - Flaska</h3>
+     <dd>
+        Gull
+        <span class="solonprice"> 950 kr</span>
+     </dd>
+     <dd>
+        Bríó
+        <span class="solonprice"> 950 kr</span>
+     </dd>
+     <dd>
+        Boli
+        <span class="solonprice"> 950 kr</span>
+     </dd>
+     <dd>
+        Stella Artois
+        <span class="solonprice"> 950 kr</span>
+     </dd>
+     <dd>
+        Peroni
+        <span class="solonprice"> 950 kr</span>
+     </dd>
+     <dd>
+        Tuborg
+        <span class="solonprice"> 950 kr</span>
+     </dd>
+     <dd>
+        Krombacher
+        <span class="solonprice"> 950 kr</span>
+     </dd>
+     <dd>
+        Úlfur
+        <span class="solonprice"> 1.200 kr</span>
+     </dd>
+     <dd>
+        Snorri
+        <span class="solonprice"> 1.200 kr</span>
+     </dd>
+     <dd>
+        Myrkvi
+        <span class="solonprice"> 1.200 kr</span>
+     </dd>
+     <dd>
+        Kronenbourg 1664
+        <span class="solonprice"> 1.200 kr</span>
+     </dd>
+     <dd>
+        Guinness
+        <span class="solonprice"> 1.300 kr</span>
+     </dd>
+     <dd>
+        Sólveig
+        <span class="solonprice"> 1.400 kr</span>
+     </dd>
+     <dd>
+        Úlfur Úlfur
+        <span class="solonprice"> 1.600 kr</span>
+     </dd>
+     <dd>
+        Smirnoff Ice
+        <span class="solonprice"> 1.200 kr</span>
+     </dd>
+     <dd>
+        Somersby
+        <span class="solonprice"> 1.200 kr</span>
+     </dd>
+     <dd>
+        Sólbert
+        <span class="solonprice"> 1.200 kr</span>
+     </dd>
+     </br>
+     <h3 class="solontypur">Bjór - Dæla</h3>
+     <dd>
+        Egils Gull
+        <span class="solonprice"> 800 kr / 1.100 kr</span>
+     </dd>
+     <dd>
+        Boli
+        <span class="solonprice"> 800 kr / 1.200 kr</span>
+     </dd>
+     <dd>
+        Bríó
+        <span class="solonprice"> 800 kr / 1.200 kr</span>
+     </dd>
+     <dd>
+        Tuborg Classic
+        <span class="solonprice"> 800 kr / 1.200 kr</span>
+     </dd>
+     <dd>
+        Kronenbourg 1664
+        <span class="solonprice"> 800 kr / 1.200 kr</span>
+     </dd>
+     <dd>
+        Guinness
+        <span class="solonprice"> 1.300 kr</span>
+     </dd>
+     </br>
+     <h3 class="solontypur">Gos drykkir</h3>
+     <dd>
+        Pepsi
+        <span class="solonprice"> 490 kr</span>
+     </dd>
+     <dd>
+        Pepsi Max
+        <span class="solonprice"> 490 kr</span>
+     </dd>
+     <dd>
+        Appelsín
+        <span class="solonprice"> 490 kr</span>
+     </dd>
+     <dd>
+        7up
+        <span class="solonprice"> 490 kr</span>
+     </dd>
+     <dd>
+        Sódavatn
+        <span class="solonprice"> 490 kr</span>
+     </dd>
+     </br>
+     <h3 class="solontypur">Heitir kaffidrykkir</h3>
+     <dd>
+        Írskt kaffi
+        <span class="solonprice"> 1.990 kr</span>
+     </dd>
+     <dd>
+        Royal kaffi
+        <span class="solonprice"> 1.990 kr</span>
+     </dd>
+     <dd>
+        Baileys kaffi
+        <span class="solonprice"> 1.990 kr</span>
+     </dd>
+    </dl>
+  </div>
+
+
+
+
+
+  <div ng-show="!isFood && isFood != undefined"> 
+    <dl>
+    <h3 class="solontypur">Red Wine</h3>
+     <dd>
+        Casillero del Diablo Cabernet Sauvignon
+        <span class="solonprice"> 1.390 kr / 5.700 kr</span>
+     </dd>
+     <dd>
+        Piccini Rosso Di Toscana - Italy
+        <span class="solonprice"> 1.390 kr / 5.900 kr</span>
+     </dd>
+     <dd>
+        Trapiche Oak Cask Malbec – Argentina
+        <span class="solonprice"> 6.900 kr</span>
+     </dd>
+     <dd>
+        Wolf Blass Eaglehawk Shiraz – Australia
+        <span class="solonprice"> 6.900 kr</span>
+     </dd>
+     <dd>
+        Rosemount Shiraz/Cabernet – Australia
+        <span class="solonprice"> 6.900 kr</span>
+     </dd>
+     <dd>
+        Leopard‘s Leap Cabernet – South Africa
+        <span class="solonprice"> 6.900 kr</span>
+     </dd>
+     <dd>
+        Matua Pinot Noir – New Zealand
+        <span class="solonprice"> 8.900 kr</span>
+     </dd>
+     <dd>
+        Lagunilla Reserva Rioja – Spain
+        <span class="solonprice"> 7.200 kr</span>
+     </dd>
+     <dd>
+        Campo Viejo Tempranillo – Spain
+        <span class="solonprice"> 6.900 kr</span>
+     </dd>
+     <dd>
+        Masi Valpolicella Classico – Italy
+        <span class="solonprice"> 6.900 kr</span>
+     </dd>
+     <dd>
+        Piccini Chianti Magnum
+        <span class="solonprice"> 14.900 kr</span>
+     </dd>
+     </br>
+    <h3 class="solontypur">White Wine</h3>
+    <dd>
+        Casillero del Diablo Chardonnay – Chile
+        <span class="solonprice"> 1.390 kr / 5.700 kr</span>
+     </dd>
+     <dd>
+        Piccini Bianco Di Toscana - Italy
+        <span class="solonprice"> 1.390 kr / 5.900 kr</span>
+     </dd>
+     <dd>
+        Montalto Pinot Grigio – Italy
+        <span class="solonprice"> 1.390 kr / 5.900 kr</span>
+     </dd>
+     <dd>
+        Trapiche Chardonnay - Argentina
+        <span class="solonprice"> 6.700 kr</span>
+     </dd>
+     <dd>
+        Wolf Blass Eaglehawk Chardonnay – Australia
+        <span class="solonprice"> 6.700 kr</span>
+     </dd>
+     <dd>
+        Jacob‘s Creek Riesling – Australia
+        <span class="solonprice"> 6.500 kr</span>
+     </dd>
+     <dd>
+        Arthur Metz Pinot Grigio – France
+        <span class="solonprice"> 6.700 kr</span>
+     </dd>
+     <dd>
+        Labourie Roi Chablis – France
+        <span class="solonprice"> 8.900 kr</span>
+     </dd>
+     <dd>
+        Matua Sauvignon Blanc – New Zealand
+        <span class="solonprice"> 7.900 kr</span>
+     </dd>
+     </br>
+     <h3 class="solontypur">Champange & Sparkling Wine</h3>
+     <dd>
+        Moet & Chandon Imperial
+        <span class="solonprice"> 6.900 kr / 29.900 kr</span>
+     </dd>
+     <dd>
+        Moet Rose
+        <span class="solonprice"> 28.900 kr</span>
+     </dd>
+     <dd>
+        Codorniu
+        <span class="solonprice"> 1.900 kr / 6.900 kr</span>
+     </dd>
+     <dd>
+        Gancia Prosecco
+        <span class="solonprice"> 6.900 kr</span>
+     </dd>
+     <dd>
+        Asti Gangia
+        <span class="solonprice"> 1.800 kr / 6.700 kr</span>
+     </dd>
+     <dd>
+        Piccini Prosecco Extra Dry
+        <span class="solonprice"> 1.900 kr / 6.900 kr</span>
+     </dd>
+     <h3 class="solontypur">Rosé</h3>
+     <dd>
+        Mateus Rosé – Portugal
+        <span class="solonprice"> 1.390 kr / 5.200 kr</span>
+     </dd>
+     </br>
+     <h3 class="solontypur">Cocktails</h3>
+     <dd>
+        Classic Mojito
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Strawberry Mojito
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Royal Mojito
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Cosmopolitan
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Martini Sólon
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Long Island Ice Tea
+        <span class="solonprice"> 3.700 kr</span>
+     </dd>
+     <dd>
+        Sex on the Beach
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Mimosa
+        <span class="solonprice"> 1.990 kr</span>
+     </dd>
+     <dd>
+        Aperol Spritz
+        <span class="solonprice"> 1.900 kr</span>
+     </dd>
+     <dd>
+        White Russian
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Black Russian
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Bloody Mary
+        <span class="solonprice"> 1.990 kr</span>
+     </dd>
+     <dd>
+        Margarita
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Frozen Strawberry Margarita
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Frozen Strawberry Daquiri
+        <span class="solonprice"> 2.500 kr</span>
+     </dd>
+     <dd>
+        Mai Thai
+        <span class="solonprice"> 2.900 kr</span>
+     </dd>
+     </br>
+     <h3 class="solontypur">Beer - Bottled</h3>
+     <dd>
+        Gull
+        <span class="solonprice"> 950 kr</span>
+     </dd>
+     <dd>
+        Bríó
+        <span class="solonprice"> 950 kr</span>
+     </dd>
+     <dd>
+        Boli
+        <span class="solonprice"> 950 kr</span>
+     </dd>
+     <dd>
+        Stella Artois
+        <span class="solonprice"> 950 kr</span>
+     </dd>
+     <dd>
+        Peroni
+        <span class="solonprice"> 950 kr</span>
+     </dd>
+     <dd>
+        Tuborg
+        <span class="solonprice"> 950 kr</span>
+     </dd>
+     <dd>
+        Krombacher
+        <span class="solonprice"> 950 kr</span>
+     </dd>
+     <dd>
+        Úlfur
+        <span class="solonprice"> 1.200 kr</span>
+     </dd>
+     <dd>
+        Snorri
+        <span class="solonprice"> 1.200 kr</span>
+     </dd>
+     <dd>
+        Myrkvi
+        <span class="solonprice"> 1.200 kr</span>
+     </dd>
+     <dd>
+        Kronenbourg 1664
+        <span class="solonprice"> 1.200 kr</span>
+     </dd>
+     <dd>
+        Guinness
+        <span class="solonprice"> 1.300 kr</span>
+     </dd>
+     <dd>
+        Sólveig
+        <span class="solonprice"> 1.400 kr</span>
+     </dd>
+     <dd>
+        Úlfur Úlfur
+        <span class="solonprice"> 1.600 kr</span>
+     </dd>
+     <dd>
+        Smirnoff Ice
+        <span class="solonprice"> 1.200 kr</span>
+     </dd>
+     <dd>
+        Somersby
+        <span class="solonprice"> 1.200 kr</span>
+     </dd>
+     <dd>
+        Sólbert
+        <span class="solonprice"> 1.200 kr</span>
+     </dd>
+     </br>
+     <h3 class="solontypur">Beer - Draft</h3>
+     <dd>
+        Egils Gull
+        <span class="solonprice"> 800 kr / 1.100 kr</span>
+     </dd>
+     <dd>
+        Boli
+        <span class="solonprice"> 800 kr / 1.200 kr</span>
+     </dd>
+     <dd>
+        Bríó
+        <span class="solonprice"> 800 kr / 1.200 kr</span>
+     </dd>
+     <dd>
+        Tuborg Classic
+        <span class="solonprice"> 800 kr / 1.200 kr</span>
+     </dd>
+     <dd>
+        Kronenbourg 1664
+        <span class="solonprice"> 800 kr / 1.200 kr</span>
+     </dd>
+     <dd>
+        Guinness
+        <span class="solonprice"> 1.300 kr</span>
+     </dd>
+     </br>
+     <h3 class="solontypur">Soft drinks</h3>
+     <dd>
+        Pepsi
+        <span class="solonprice"> 490 kr</span>
+     </dd>
+     <dd>
+        Pepsi Max
+        <span class="solonprice"> 490 kr</span>
+     </dd>
+     <dd>
+        Orange Soda
+        <span class="solonprice"> 490 kr</span>
+     </dd>
+     <dd>
+        7up
+        <span class="solonprice"> 490 kr</span>
+     </dd>
+     <dd>
+        Sparkling Water
+        <span class="solonprice"> 490 kr</span>
+     </dd>
+     </br>
+     <h3 class="solontypur">Hot coffee drinks</h3>
+     <dd>
+        Irish coffee
+        <span class="solonprice"> 1.990 kr</span>
+     </dd>
+     <dd>
+        Royal coffee
+        <span class="solonprice"> 1.990 kr</span>
+     </dd>
+     <dd>
+        Baileys coffee
+        <span class="solonprice"> 1.990 kr</span>
+     </dd>
+    </dl>
+  </div>
 </div>
