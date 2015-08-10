@@ -6,7 +6,7 @@
 		"Drinks":    "Drinks",
 		"About":     "About Us",
 		"RentVenue": "Rent Venue",
-		"Open":      "Opening hours"
+		"Opening":   "Opening"
 	},
 	"open": {
 		"SunThu":    "Sun - Thu"
