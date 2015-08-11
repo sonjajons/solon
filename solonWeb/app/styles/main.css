@@ -110,18 +110,6 @@ dd {
   margin-right: auto;
 }
 
-.solonOpen {
-  padding-top: 14px;
-  padding-left: 10px;
-  font-size: large;
-  color: white;
-  list-style: none;
-}
-
-.solonOpen:hover {
-  color: #D47D3A;
-}
-
 .slider {
   border-radius: 5px;
 }
