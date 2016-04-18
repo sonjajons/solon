@@ -4,7 +4,8 @@
 }*/
 
 * {
-  font-family: solonFont, "Courier New", Courier, monospace;
+  /*font-family: solonFont, "Courier New", Courier, monospace;*/
+  font-family: 'Raleway', sans-serif;
 }
 
 dl {
@@ -17,6 +18,7 @@ dt {
 }
 
 dd {
+  max-width: 90%;
   text-align: left;
   margin-top: 2px;
 }
@@ -131,6 +133,10 @@ dd {
 	text-align: right;
 }
 
+.swapp {
+	padding-bottom: 1px;
+}
+
 //////////////////////////////////////////////////////////////////////////
 
 .browsehappy {
@@ -143,7 +149,7 @@ dd {
 body {
   padding: 0;
   /*background-color: #3D3F3C;*/
-  background-image: url("graywall.jpg");
+  background-image: url("SolonBackground.png");
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
