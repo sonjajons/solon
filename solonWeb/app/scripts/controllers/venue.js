@@ -7,11 +7,6 @@
  * # VenueCtrl
  * Controller of the solonWebApp
  */
-angular.module('solonWebApp').controller('VenueCtrl', function ($scope) {
+angular.module('solonWebApp').controller('VenueCtrl', function () {
 	// TODO
-	$scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
 });

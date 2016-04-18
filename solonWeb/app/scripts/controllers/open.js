@@ -7,11 +7,6 @@
  * # OpenCtrl
  * Controller of the solonWebApp
  */
-angular.module('solonWebApp').controller('OpenCtrl', function ($scope) {
+angular.module('solonWebApp').controller('OpenCtrl', function () {
 	// TODO
-	$scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
 });

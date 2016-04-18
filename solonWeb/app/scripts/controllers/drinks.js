@@ -7,11 +7,6 @@
  * # DrinksCtrl
  * Controller of the solonWebApp
  */
-angular.module('solonWebApp').controller('DrinksCtrl', function ($scope) {
+angular.module('solonWebApp').controller('DrinksCtrl', function () {
 	// TODO
-	$scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
 });
